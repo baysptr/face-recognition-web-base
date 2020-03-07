@@ -33,8 +33,8 @@ Project ini akan memperkenalkan bagaimana komputer mengenali kontur wajah anda d
 - Enjoy!
 
 ## Issue
-[ ] Show accuracy train data
-[ ] Compare data is not full service and decision
+- [ ] Show accuracy train data
+- [ ] Compare data is not full service and decision
 
 ## Thanks
 * Many, many thanks to [Davis King](https://github.com/davisking) ([@nulhom](https://twitter.com/nulhom)) for creating dlib and for providing the trained facial feature detection and face encoding models used in this library. For more information on the ResNet that powers the face encodings, check out his [blog post](http://blog.dlib.net/2017/02/high-quality-face-recognition-with-deep.html).
