@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "536cfce4-96f3-4855-8f4e-227b1311d486",
+		"name": "Face Recognition",
+		"description": "End-point dari program face recognition berbasis web dengan bahasa pemrograman python",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check data train",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:5000/data_train",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"data_train"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Init program",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:5000/data_train",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"data_train"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check data train with id (output single row)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:5000/data_train/5e62a78ae5d950de5c50f67b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"data_train",
+						"5e62a78ae5d950de5c50f67b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recognition new data and compare",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "foto",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/recognition",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"recognition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "How to add data train",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "Luhut Binsar Panjaitan",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "jabatan",
+							"value": "Menteri Koordinator Bidang Kemaritiman",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"value": "",
+							"description": "Tambahkan fot pak luhut yang HD",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/add_data_train",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"add_data_train"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
